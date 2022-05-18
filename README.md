@@ -1,7 +1,7 @@
 # SDQ
 Official PyTorch implementation for paper "SDQ: Stochastic Differentiable Quantization with Mixed Precision". This work is done by Xijie Huang, Zhiqiang Shen, Shichao Li, Zechun Liu, Xianghong Hu, Jeffry Wicaksana, Eric Xing, and Kwang-Ting Cheng.
 
-![framework](.\images\framework.jpg)
+![framework](./images/framework.jpg)
 
 ### Abstract 
 
