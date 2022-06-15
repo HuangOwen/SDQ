@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>SDQ: Stochastic Differentiable Quantization with Mixed Precision</title>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <div style="text-align: center;">
+      <h1>SDQ</h1>
+      <h3>Stochastic Differentiable Quantization with Mixed Precision</h3>
+      <div style="margin-bottom: 10px;">
+        <span style="margin-right: 10px; font-size: 1.2em;">Xijie Huang, Zhiqiang Shen, Shichao Li, Zechun Liu, Xianghong Hu, Jeffry Wicaksana, Eric Xing, Kwang-Ting Cheng</span> 
+      </div>
+      <div>
+        <span style="margin-right: 10px; font-size: 1.2em;">ICML 2022 </span>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 60px; margin-bottom: 20px;">
+      <img src="./images/framework.jpg" width=60% class="img-fluid" alt="Responsive image">
+    </div>
+    <div class="text-center" style="font-size: 1.5em; margin-bottom: 30px;">
+      <a href="" target="_blank" style="margin-right: 20px;">[Paper]</a>
+      <a href="" target="_blank" style="margin-right: 20px;">[Code] (available upon request)</a>
+      <a href="" target="_blank" style="margin-right: 20px;">[Slides]</a>
+      <a href="" target="_blank" style="margin-right: 20px;">[Talk]</a>
+    </div>
+    <div>
+      <h2 class="text-center">
+        Abstract
+      </h2>
+      <p style="font-style: italic;">
+        In order to deploy deep models in a computationally efficient manner, model quantization approaches have been frequently used. In addition, as new hardware that supports various-bit arithmetic operations, recent research on mixed precision quantization (MPQ) begins to fully leverage the capacity of representation by searching various bitwidths for different layers and modules in a network. However, previous studies mainly search the MPQ strategy in a costly scheme using reinforcement learning, neural architecture search, etc., or simply utilize partial prior knowledge for bitwidth distribution, which might be biased and sub-optimal. In this work, we present a novel Stochastic Differentiable Quantization (SDQ) method that can automatically learn the MPQ strategy in a more flexible and globally-optimized space with a smoother gradient approximation. Particularly, Differentiable Bitwidth Parameters (DBPs) are employed as the probability factors in stochastic quantization between adjacent bitwidth. After the optimal MPQ strategy is acquired, we further train our network with the entropy-aware bin regularization and knowledge distillation. We extensively evaluate our method on different networks, hardwares (GPUs and FPGA), and datasets. SDQ outperforms all other state-of-the-art mixed or single precision quantization with less bitwidth, and are even better than the original full-precision counterparts across various ResNet and MobileNet families, demonstrating the effectiveness and superiority of our method. Code will be publicly available.
+      </p>
+      <p>
+        <span style="font-weight: bold;">TL;DR:</span> We proposed a learning based mixed precision quantization framework that can optimize the optimal MPQ strategy automatically. 
+      </p>
+    </div>
+    
+    <div>
+      <h2 class="text-center">
+        Citation
+      </h2>
+      <p>
+        If you want to cite our work, please use:
+      </p>
+      <pre>
+        @inproceedings{huang2022sdq,
+          author    = {Xijie Huang, Zhiqiang Shen, Shichao Li, Zechun Liu, Xianghong Hu, Jeffry Wicaksana, Eric Xing, Kwang-Ting Cheng},  
+          title     = {SDQ: Stochastic Differentiable Quantization with Mixed Precision},
+          booktitle   = {International Conference on Machine Learning (ICML)},
+          year      = {2022},
+        }
+      </pre>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
